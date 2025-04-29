@@ -13,12 +13,4 @@ setup(
             "calc = main:main",  # Link your script with the function main()
         ],
     },
-    # Optional metadata
-    author="Kelompok B1",
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
-    python_requires='>=3.8',  # Set minimum Python version
 )
