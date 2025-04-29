@@ -1,7 +1,4 @@
-from calculator import tambah, kurang, kali, bagi
-
-def compute(operand1, operand2, operator):
-    # Validasi angka: harus bisa dikonversi ke int
+def validate_input(operand1, operand2, operator):
     try:
         num1 = int(operand1)
         num2 = int(operand2)
@@ -19,13 +16,3 @@ def compute(operand1, operand2, operator):
     # Validasi pembagi pada operasi bagi
     if operator == '/' and num2 == 0:
         return "Error: pembagi tidak boleh nol"
-
-    # Proses perhitungan sesuai operator
-    if operator == '+':
-        return f"Hasil: {tambah(num1, num2)}"
-    elif operator == '-':
-        return f"Hasil: {kurang(num1, num2)}"
-    elif operator == '*':
-        return f"Hasil: {kali(num1, num2)}"
-    elif operator == '/':
-        return f"Hasil: {bagi(num1, num2)}"
