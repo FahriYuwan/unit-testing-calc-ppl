@@ -1,4 +1,4 @@
-from calculator.calculate import tambah, kurang, kali, bagi
+from calculate import tambah, kurang, kali, bagi
 
 def compute(operand1, operand2, operator):
     if operator == '+':

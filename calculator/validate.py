@@ -16,3 +16,9 @@ def validate_input(operand1, operand2, operator):
     # Validasi pembagi pada operasi bagi
     if operator == '/' and num2 == 0:
         return "Error: pembagi tidak boleh nol"
+    
+def validation_result(operand1, operand2, operator):
+    validation_result = validate_input(operand1, operand2, operator)
+    if validation_result:
+        print(validation_result)
+        exit(1)

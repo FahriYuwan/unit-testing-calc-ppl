@@ -1,15 +1,12 @@
-from calculator.get_input import get_input
-from calculator.validate import validate_input
-from calculator.compute import compute
+from get_input import get_input
+from validate import validation_result
+from compute import compute
 
 def main():
     try:
         operand1, operand2, operator = get_input()
         # Validasi input
-        validation_result = validate_input(operand1, operand2, operator)
-        if validation_result:
-            print(validation_result)
-            return
+        validation_result(operand1, operand2, operator)
         # Proses perhitungan sesuai operator
         result = compute(int(operand1), int(operand2), operator)
         print(result)
